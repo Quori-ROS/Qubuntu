@@ -29,8 +29,11 @@ sudo cp chroot.sh edit
 sudo chroot edit /bin/bash -c "su - -c /chroot.sh"
 
 sudo cp setup.bash edit/opt/quori
-sudo cp 49-teensy.rules edit/etc/udev/rules.d/  
+
+sudo cp 49-teensy.rules edit/etc/udev/rules.d/
 sudo cp 56-orbbec-usb.rules edit/etc/udev/rules.d/
+sudo cp 59-rplidar.rules edit/etc/udev/rules.d/
+sudo cp 60-respeaker.rules edit/etc/udev/rules.d/
 
 sudo umount edit/run
 sudo umount -R edit/dev
