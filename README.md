@@ -25,6 +25,8 @@ echo "source /opt/quori/setup.bash" >> ~/.bashrc
 
 # Source in changes
 . ~/.bashrc
+# Make quori_ros files writable
+sudo chown -R $USER /opt/quori
 
 # Make quori_embedded files writable (for calibration)
 sudo chown -R $USER /opt/quori_embedded
