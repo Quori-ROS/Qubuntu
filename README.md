@@ -31,6 +31,9 @@ sudo chown -R $USER /opt/quori
 # Make quori_embedded files writable (for calibration)
 sudo chown -R $USER /opt/quori_embedded
 
+# Install the arduino IDE
+sudo /opt/arduino-1.8.16/install.sh
+
 # EXTERNAL STEP: Install microcontroller firmware (see quori_embedded repository)
 
 # Configure udev rules for microcontrollers. Reboot when prompted.
